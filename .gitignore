@@ -1,28 +1,16 @@
-# Binaries for programs and plugins
-*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
-
-# Test binary, built with `go test -c`
-*.test
-
-# Output of the go coverage tool, specifically when used with LiteIDE
-*.out
-
-# Dependency directories (remove the comment below to include it)
-vendor/
-
 # macOS rubbish
 .DS_Store
 
-# Frontends rubbish
-node_modules
+# Windows rubbish
+Thumbs.db
+desktop.ini
+
+# Node (doocs/md 公众号排版工作流)
+node_modules/
 /dist
 
-
 # local env files
+.env
 .env.local
 .env.*.local
 
@@ -32,6 +20,12 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
+# Credentials / Secrets
+*.pem
+*.key
+id_rsa*
+*.token
+
 # Editor directories and files
 .idea
 .vscode
@@ -40,3 +34,13 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+# 设计工具产生的临时/缓存文件
+~$*.doc*
+~$*.xls*
+~$*.ppt*
+*.tmp
+*.bak
+
+# Figma 等本地缓存(如使用对应本地工具)
+.fig

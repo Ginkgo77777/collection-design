@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 40" width="600" height="40">
+  <!-- 分隔装饰 SVG(示例): 中心短线 + 两侧细线, 颜色集中在此处便于复用与替换 -->
+  <line x1="0" y1="20" x2="250" y2="20" stroke="#d9d9d9" stroke-width="1"/>
+  <line x1="350" y1="20" x2="600" y2="20" stroke="#d9d9d9" stroke-width="1"/>
+  <rect x="288" y="14" width="24" height="12" fill="#4a90d9" rx="2"/>
+  <circle cx="270" cy="20" r="4" fill="#4a90d9"/>
+  <circle cx="330" cy="20" r="4" fill="#4a90d9"/>
+</svg>

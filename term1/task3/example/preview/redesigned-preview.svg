@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="300" height="400">
+  <rect width="600" height="800" fill="#ffffff"/>
+  <text x="300" y="80" text-anchor="middle" font-size="26" fill="#1c1c22" font-family="sans-serif">西二在线 2026 纳新公告</text>
+  <line x1="240" y1="100" x2="360" y2="100" stroke="#d5d8de" stroke-width="2"/>
+  <text x="40" y="150" font-size="18" fill="#1c1c22" font-family="sans-serif">一、我们是谁</text>
+  <rect x="40" y="160" width="44" height="3" fill="#3a7bd5" rx="2"/>
+  <text x="40" y="190" font-size="14" fill="#2f2f33" font-family="sans-serif">西二在线工作室是一个学生技术社团…</text>
+  <rect x="40" y="220" width="4" height="70" fill="#3a7bd5"/>
+  <text x="60" y="260" font-size="13" fill="#55555c" font-family="sans-serif">这里没有魔法, 只有一群相信"慢慢来, 比较快"的人。</text>
+  <line x1="40" y1="340" x2="560" y2="340" stroke="#d5d8de" stroke-width="1"/>
+  <text x="300" y="430" text-anchor="middle" font-size="14" fill="#90939c" font-family="sans-serif">占位示例: 重设计主题预览图</text>
+</svg>

@@ -1,0 +1,124 @@
+/* =========================================================
+ * 优化/重设计主题(示例)
+ * 基于临摹主题的改进版本, 目标读者与使用场景见 README。
+ * 主要变化(相对临摹版):
+ *   1. 行高 1.75 -> 1.8, 段间距 16px -> 20px, 缓解长文阅读疲劳
+ *   2. 标题改用字重对比 + 底部短横线, 不再依赖左侧竖线(小屏上更节省横向空间)
+ *   3. 引用块弱化底色, 改用左侧粗线, 降低大面积灰底在低亮度屏幕的刺眼感
+ *   4. 增加图片说明的专用类 .img-caption, 不再依赖"仅含斜体"的偶然结构
+ *   5. 变量全部收敛到 :root, 方便整站换色
+ * ========================================================= */
+
+:root {
+  /* 颜色 */
+  --md-text-color: #2f2f33;
+  --md-title-color: #1c1c22;
+  --md-accent: #3a7bd5;
+  --md-quote-color: #55555c;
+  --md-code-bg: #f4f5f7;
+  --md-table-border: #e4e6ea;
+  --md-divider-color: #d5d8de;
+
+  /* 字体与排版 */
+  --md-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  --md-font-size: 15px;
+  --md-line-height: 1.8;         /* 变化 1 */
+  --md-paragraph-gap: 20px;      /* 变化 1 */
+  --md-radius: 6px;
+}
+
+body {
+  font-family: var(--md-font-family);
+  font-size: var(--md-font-size);
+  line-height: var(--md-line-height);
+  color: var(--md-text-color);
+}
+
+p { margin: 0 0 var(--md-paragraph-gap); letter-spacing: 0.02em; }
+
+/* 变化 2: 标题用字重 + 底部短横线 */
+h1, h2, h3, h4 {
+  color: var(--md-title-color);
+  margin-top: 1.5em;
+  margin-bottom: 0.7em;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--md-divider-color);
+}
+
+h2 {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 2.2em;
+  height: 3px;
+  margin-top: 6px;
+  background: var(--md-accent);
+  border-radius: 2px;
+}
+
+h3 { font-size: 1.05em; font-weight: 600; }
+
+strong { color: var(--md-accent); }
+
+a { color: var(--md-accent); text-decoration: underline; text-underline-offset: 3px; }
+
+/* 变化 3: 引用块改用左侧粗线 */
+blockquote {
+  margin: var(--md-paragraph-gap) 0;
+  padding: 2px 0 2px 16px;
+  border-left: 4px solid var(--md-accent);
+  color: var(--md-quote-color);
+}
+
+ul, ol { padding-left: 1.6em; margin-bottom: var(--md-paragraph-gap); }
+li { margin: 6px 0; }
+
+img { max-width: 100%; border-radius: var(--md-radius); }
+
+/* 变化 4: 图片说明使用专用类, 而非依赖偶然结构 */
+.img-caption {
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  color: #90939c;
+  margin-top: -12px;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: var(--md-divider-color);
+  margin: 36px 0;
+}
+
+table { border-collapse: collapse; width: 100%; margin-bottom: var(--md-paragraph-gap); }
+th, td { border: 1px solid var(--md-table-border); padding: 8px 12px; text-align: left; }
+th { background: var(--md-code-bg); font-weight: 600; }
+
+pre {
+  background: var(--md-code-bg);
+  border-radius: var(--md-radius);
+  padding: 12px 16px;
+  overflow-x: auto;
+  font-size: 13px;
+}
+
+code {
+  background: var(--md-code-bg);
+  border-radius: var(--md-radius);
+  padding: 2px 5px;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+}
+
+footer, .post-footer { text-align: center; color: #90939c; font-size: 13px; margin-top: 44px; }

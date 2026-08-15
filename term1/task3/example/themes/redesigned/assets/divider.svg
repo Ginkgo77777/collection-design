@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 40" width="600" height="40">
+  <!-- 分隔装饰 SVG(示例): 重设计主题使用"圆点渐变"分隔, 与主题的圆角语言一致 -->
+  <line x1="0" y1="20" x2="230" y2="20" stroke="#d5d8de" stroke-width="1"/>
+  <line x1="370" y1="20" x2="600" y2="20" stroke="#d5d8de" stroke-width="1"/>
+  <circle cx="260" cy="20" r="4" fill="#3a7bd5"/>
+  <circle cx="280" cy="20" r="7" fill="#3a7bd5"/>
+  <circle cx="305" cy="20" r="10" fill="#3a7bd5"/>
+  <circle cx="330" cy="20" r="7" fill="#3a7bd5"/>
+  <circle cx="345" cy="20" r="4" fill="#3a7bd5"/>
+</svg>

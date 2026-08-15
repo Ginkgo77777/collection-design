@@ -1,0 +1,16 @@
+# 示例 .gitignore(任务级)
+
+# 依赖与构建缓存(doocs/md 本地部署)
+node_modules/
+/dist
+/.output
+
+# 凭据与敏感信息(严禁提交)
+.env
+.env.*
+*.pem
+*.token
+
+# 本地草稿与临时文件
+*.tmp
+*.bak

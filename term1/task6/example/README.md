@@ -1,0 +1,59 @@
+# task6 提交范例
+
+> [!WARNING]
+> 本目录是 task6 的**提交范例**, 仅用于展示建议的文件结构与说明写法, 请勿直接复制内容提交
+
+- 假想的提交者: `example-student`
+- 资产库本体位置: 个人 NAS / 本地磁盘(示例占位, 不提交到本仓库)
+
+## 工具选型与环境要求
+
+| 用途 | 主线工具 | 选型理由 | 替代方案与理由 |
+| --- | --- | --- | --- |
+| 参考链接库 | [linkding](https://github.com/sissbruecker/linkding) | 可自托管、浏览器扩展、标签与批量导入、可导出 | Linkwarden(需要快照/批注时) |
+| 文件型资产库 | [TagSpaces](https://docs.tagspaces.org/) | 管理普通文件夹, 标签随文件迁移(sidecar) | Eagle(重视视觉化时, 但需关注导出能力) |
+| 文本资产版本 | Git | Markdown/JSON/SVG 等直接可 diff | - |
+| 大文件版本 | Git LFS | 统一在 Git 流程内管理二进制 | 未启用(资产暂不超过 100MB) |
+| 组件与 Token | Figma Library | task2/task4 的组件与变量唯一来源 | Penpot(开源, 团队协作时评估) |
+| 团队 DAM | 暂不部署 | 单人使用, 维护成本不划算 | ResourceSpace(多人审批/权限需求出现后) |
+
+## 目录结构(概述)
+
+- 完整文件树见 [structure.md](structure.md)
+- 四类库用途划分:
+
+| 库 | 用途 | 谁可进入 |
+| --- | --- | --- |
+| 参考库 | 网页、案例、灵感, 只保存链接与截图, 不默认拥有使用权 | 全部, 但需标注"仅供参考" |
+| 通用资产库 | 已确认来源与授权、可跨项目复用的资产 | 仅 Approved |
+| 项目资产库 | 各项目实际使用的资产、修改记录与交付版本 | 按项目 |
+| 设计系统 | 组件、Styles、Token 及设计稿与代码的对应关系 | Figma Library |
+
+## 授权分类
+
+| 分类 | 说明 | 可进入 |
+| --- | --- | --- |
+| 原创 | 明确作者与使用范围 | 通用库 |
+| 公共领域 / CC0 | 确认授权声明后 | 通用库 |
+| 允许使用 | 记录署名/商用/修改/再分发条件 | 通用库(记录条件) |
+| 限制使用 | 仅符合授权的项目与场景 | 项目库 |
+| 仅供参考 | 不可进入最终交付 | 参考库 |
+| AI 生成 | 记录模型、时间、参考素材与平台条款, 人工检查 | 隔离区, 确认后定级 |
+
+## 状态与流程
+
+- 状态: `Inbox / Reviewing / Approved / Deprecated / Archived`, 每次变化记录负责人与时间
+- 流程: Collect → Review → Normalize → Register → Approve → Use → Update → Archive, 详见 [processing-log.md](processing-log.md)
+
+## 同步与备份策略
+
+- **同步**(保证各设备一致): 资产库本体通过 NAS 同步到个人电脑与笔记本, Git 仓库同步文本资产
+- **备份**(防丢, 与同步区分): NAS 每周快照 + 每月冷备到移动硬盘, Git 仓库推送远程
+- 恢复演练: 每季度做一次冷备恢复抽查
+
+## 其他人如何接手维护
+
+1. 先读 [structure.md](structure.md) 与 [naming-and-tags.md](naming-and-tags.md), 理解目录与命名
+2. 新资产一律先进入 `Inbox`, 按 processing-log 的流程流转, 不要直接放入 Approved
+3. 修改任何资产需在 sidecar 元数据中记录维护者与变更内容
+4. 遇到授权不明的资产, 停在 Reviewing, 不猜测

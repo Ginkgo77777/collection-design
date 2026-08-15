@@ -1,0 +1,125 @@
+/* =========================================================
+ * 临摹主题(示例)
+ * 临摹对象: 参考公众号文章《迎新特辑》
+ * 说明: 本文件为范例, 展示了"变量集中管理 + 元素选择器映射"的写法。
+ *       实际使用时请核对 doocs/md 渲染后 HTML 的实际类名与结构,
+ *       并通过编辑器预览反复检查, 避免仅对当前文章有效的一次性样式。
+ * ========================================================= */
+
+:root {
+  /* 颜色 */
+  --md-text-color: #333333;
+  --md-title-color: #1a1a1a;
+  --md-accent: #4a90d9;          /* 强调色: 标题左侧竖线与强调文字 */
+  --md-quote-color: #666666;
+  --md-quote-bg: #f5f7fa;
+  --md-code-bg: #f0f2f5;
+  --md-table-border: #e0e0e0;
+  --md-divider-color: #d9d9d9;
+
+  /* 字体与排版 */
+  --md-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  --md-font-size: 15px;
+  --md-line-height: 1.75;
+  --md-paragraph-gap: 16px;
+  --md-title-scale: 1.15;        /* 各级标题字号比例 */
+  --md-radius: 4px;
+}
+
+/* 正文 */
+body {
+  font-family: var(--md-font-family);
+  font-size: var(--md-font-size);
+  line-height: var(--md-line-height);
+  color: var(--md-text-color);
+}
+
+p {
+  margin: 0 0 var(--md-paragraph-gap);
+  letter-spacing: 0.02em;
+}
+
+/* 标题: 逐级递减 + 左侧强调竖线 */
+h1, h2, h3, h4 {
+  color: var(--md-title-color);
+  font-weight: 600;
+  margin-top: 1.4em;
+  margin-bottom: 0.6em;
+}
+
+h1 {
+  font-size: calc(var(--md-font-size) * var(--md-title-scale) * var(--md-title-scale));
+  text-align: center;
+  border-left: none;
+}
+
+h2 {
+  font-size: calc(var(--md-font-size) * var(--md-title-scale));
+  border-left: 4px solid var(--md-accent);
+  padding-left: 10px;
+}
+
+h3 {
+  font-size: calc(var(--md-font-size) * var(--md-title-scale) * 0.92);
+}
+
+/* 强调与链接 */
+strong { color: var(--md-accent); }
+
+a { color: var(--md-accent); text-decoration: none; border-bottom: 1px solid var(--md-accent); }
+
+/* 引用 */
+blockquote {
+  margin: var(--md-paragraph-gap) 0;
+  padding: 10px 16px;
+  background: var(--md-quote-bg);
+  border-left: 4px solid var(--md-accent);
+  color: var(--md-quote-color);
+  border-radius: 0 var(--md-radius) var(--md-radius) 0;
+}
+
+/* 列表 */
+ul, ol { padding-left: 1.6em; margin-bottom: var(--md-paragraph-gap); }
+li { margin: 4px 0; }
+
+/* 图片与图片说明 */
+img { max-width: 100%; border-radius: var(--md-radius); }
+/* 图片说明(斜体段落) */
+p em:only-child { display: block; text-align: center; font-size: 13px; color: #999999; }
+
+/* 分隔线: 默认展示为细线, 主题装饰 SVG 由编辑器资源替换 */
+hr {
+  border: none;
+  height: 1px;
+  background: var(--md-divider-color);
+  margin: 32px 0;
+}
+
+/* 表格 */
+table { border-collapse: collapse; width: 100%; margin-bottom: var(--md-paragraph-gap); }
+th, td {
+  border: 1px solid var(--md-table-border);
+  padding: 8px 12px;
+  text-align: left;
+}
+th { background: var(--md-quote-bg); font-weight: 600; }
+
+/* 代码块 */
+pre {
+  background: var(--md-code-bg);
+  border-radius: var(--md-radius);
+  padding: 12px 16px;
+  overflow-x: auto;
+  font-size: 13px;
+}
+
+code {
+  background: var(--md-code-bg);
+  border-radius: var(--md-radius);
+  padding: 2px 5px;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+}
+
+/* 文末信息 */
+footer, .post-footer { text-align: center; color: #999999; font-size: 13px; margin-top: 40px; }

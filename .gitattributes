@@ -1,7 +1,16 @@
-*.sh text eol=lf
-*.go text eol=lf
+# 文本文件统一 LF 行尾, 便于跨平台协作
+*.md text eol=lf
+*.txt text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.json text eol=lf
+*.svg text eol=lf
 *.yaml text eol=lf
 *.yml text eol=lf
-*.thrift text eol=lf
-*.proto text eol=lf
-Makefile text eol=lf
+
+# 大体积二进制设计资产建议使用 Git LFS(需仓库启用 LFS 后方可生效)
+# 示例: Figma 源文件副本 / 高保真 PSD、AI、Blender 等源文件
+# *.fig filter=lfs diff=lfs merge=lfs -text
+# *.psd filter=lfs diff=lfs merge=lfs -text
+# *.ai filter=lfs diff=lfs merge=lfs -text
+# *.blend filter=lfs diff=lfs merge=lfs -text
