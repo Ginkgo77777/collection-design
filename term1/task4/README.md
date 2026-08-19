@@ -5,7 +5,7 @@
 ## 提交内容
 
 1. 在 Figma 中完成真实软件场景的 UI/UX 设计(Web / 客户端 / 小程序 / 游戏内界面等), 需支持从进入软件到完成任务并得到结果反馈的完整流程
-2. 前期构思: Purpose / Audience / Context、调研依据(访谈/问卷/竞品分析等)、Information Architecture、User Flow 与低保真原型
+2. 前期构思: Purpose / Audience / Context、调研依据(访谈/问卷/竞品分析等)、Information Architecture 与 User Flow
 3. 中期设计: Responsive Layout、Component System(Variants/Properties/状态)、Design System(Token/Variables/Modes)、Prototyping(流程与动效)、规范的 Pages/Sections/图层命名
 4. 后期验证与交付: UX 测试记录与迭代、Dev Mode 或 Annotations 交付说明
 5. 提交物需包括:
