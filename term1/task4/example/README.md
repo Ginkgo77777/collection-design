@@ -30,8 +30,6 @@ example
 |    |___ iterations.md
 |___ assets
 |    |___ LICENSE.md           // 资产与第三方内容清单
-|___ preview
-     |___ key-screens.svg      // 关键界面预览(占位示例)
 ```
 
 ## Prototype 入口与建议体验顺序
@@ -55,3 +53,4 @@ example
 - Figma 文件按 `Research / Draft / Components / Screens / Prototype` 分页组织, 命名规则见文件内说明(示例占位)
 - Design Token 使用 Variables 管理, 分 Light/Dark Mode; 组件在 `Components` 页维护
 - 字体、图标与图片的来源和授权见 `assets/LICENSE.md`
+- 关键界面、状态与完整交互统一通过上方 Figma 链接查看, 本提交目录不附预览图或录屏

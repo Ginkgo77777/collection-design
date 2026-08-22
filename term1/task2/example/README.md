@@ -15,18 +15,18 @@ example
 |___ design-brief.md        // 设计说明
 |___ process-log.md         // 设计过程记录(流水账)
 |___ assets
-|    |___ LICENSE.md        // 资产来源与授权清单
-|    |___ title-art.svg     // 自绘艺术字标题矢量源文件
-|___ exports                // 按实际用途导出的文件
-|    |___ README.md         // 导出规格说明
-|    |___ poster-main-1000x1414.svg
-|    |___ social-square-1080x1080.svg
-|    |___ banner-web-1920x700.svg
-|    |___ ticket-800x320.svg
-|___ preview                // 便于审核的预览图
-     |___ README.md
-     |___ poster-main-preview.svg
+     |___ LICENSE.md        // 资产来源与授权清单
 ```
+
+## Figma Page 结构
+
+| 顺序 | Page | 内容 |
+| --- | --- | --- |
+| 1 | `01_Preview` | 主视觉海报置于首位, 并集中展示四类物料的最终效果 |
+| 2 | `02_Final` | 各物料的正式 Frame、实际尺寸、目标媒介与使用方式 |
+| 3 | `03_Foundations` | Grid、Spacing、Typography、Color、Radius 与 Variables |
+| 4 | `04_Components-Assets` | 组件、图形元素、可编辑艺术字、图片与图标来源说明 |
+| 5 | `05_Process` | 参考案例、草图、早期方案、迭代对照、打印校色与最终取舍 |
 
 ## 各物料与使用场景
 
@@ -38,4 +38,4 @@ example
 | 摊位门票 | 纸质打印 | 线下摊位发放 | 手持 |
 
 > [!NOTE]
-> `exports/` 中的 SVG 为占位示例, 实际提交时应替换为 Figma 导出的 PNG/PDF 等真实文件, 并保留与示例一致的命名方式
+> 全部设计效果、可编辑元素与设计痕迹均通过上方具有查看权限的 Figma 链接查看, 提交仓库不附预览图或导出资产。第一 Page 必须作为预览入口, 后续 Page 可根据项目规模拆分或合并

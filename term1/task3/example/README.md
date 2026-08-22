@@ -6,6 +6,7 @@
 - 假想的提交者: `example-student`
 - 临摹对象: 「XX 社团公众号」的文章《迎新特辑》排版(示例占位, 实际替换为你选择的公众号与文章)
   - 参考文章链接: `https://mp.weixin.qq.com/s/xxxxxxxx`(示例占位)
+- Figma 展示链接: `https://www.figma.com/design/xxxxxxxx/wechat-theme-comparison`(示例占位, 实际替换为你的项目链接, 并开启查看权限)
 
 ## 目录结构
 
@@ -24,9 +25,6 @@ example
 |         |___ theme.css
 |         |___ assets
 |              |___ divider.svg
-|___ preview                  // 两阶段预览图
-|    |___ imitated-preview.svg
-|    |___ redesigned-preview.svg
 |___ analysis
      |___ reference-analysis.md   // 参考主题分析
      |___ worklog.md              // 环境配置与工作记录
@@ -63,6 +61,8 @@ docker run -d -p 8080:80 doocs/md:latest   # http://localhost:8080
 | 临摹排版对象 | 参考公众号文章《迎新特辑》 | 仅用于学习与考核, 不对外发布 | 引用 |
 | doocs/md | [github.com/doocs/md](https://github.com/doocs/md) | [WTFPL](https://github.com/doocs/md/blob/main/LICENSE) | 引用 |
 | 分隔线 SVG | 基于参考主题样式重绘 | 原创(重构) | 原创 |
-| 示例图片 | 自有截图 / 占位图 | 原创 | 原创 |
+| 示例图片 | 本人拍摄 / 已授权图库 | 按实际来源填写 | 原创或引用 |
 
 > 声明: 本提交中的临摹主题仅用于学习与考核, 未将参考公众号的品牌标识或专属资产用于对外发布
+
+> 两阶段视觉效果统一通过上方 Figma 链接展示, 本提交目录不附预览图。

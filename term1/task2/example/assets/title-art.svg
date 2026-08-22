@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="400" height="200">
-  <rect width="400" height="200" fill="#0E1B3D"/>
-  <text x="200" y="90" text-anchor="middle" font-size="34" fill="#F5C04E" font-family="sans-serif">星野</text>
-  <path d="M 60 150 Q 200 110 340 150" stroke="#F5C04E" stroke-width="3" fill="none"/>
-  <circle cx="200" cy="150" r="4" fill="#F5C04E"/>
-  <text x="200" y="182" text-anchor="middle" font-size="12" fill="#A8B2C7" font-family="sans-serif">标题艺术字矢量源文件示例(基于思源黑体自绘)</text>
-</svg>
