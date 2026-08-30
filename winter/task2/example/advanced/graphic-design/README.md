@@ -8,7 +8,7 @@
 
 - 参考对象与来源:
 - 使用的比例和几何关系:
-- 辅助线完整过程: `preview/construction-steps.*` 或 Figma 对应 Section
+- 辅助线完整过程: Figma 对应 Section；目标媒介需要独立交付时，在 `deliverables/` 放置必要文件
 - 结论: 哪些约束真正影响了结果，哪些没有采用以及原因。
 
 ## 光学修正对照

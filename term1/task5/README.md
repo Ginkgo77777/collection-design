@@ -1,19 +1,16 @@
-# task5 AI 融合工作流
+# task5 个人博客、Agent 与 Skill
 
 任务详情: [learn-design/steps/term1/task5.md](https://github.com/west2-online/learn-design/blob/main/steps/term1/task5.md)
 
 ## 提交内容
 
-1. 本任务选题自由(个人博客、自媒体运营、任意设计课题等), 建议将选题项目放在你自己的 GitHub 仓库维护
-2. 部署本地 AI 工作流: 安装并使用至少一种 Agent(Codex / Opencode / Claude Code 等), 尝试两类工作流(设计工具 + MCP Server / 文件、代码或开放设计格式)
-3. 使用设计术语与 AI 进行可回溯的交互式改进, 保留关键 Prompt、AI 回复摘要、工具与模型信息、生成结果和人工修改记录
-4. 分析 AI 生成与修改结果(至少一个成功案例与一个失败案例), 检查来源、授权、隐私与事实性风险
-5. 使用并客观评判他人 Skill(保留 Baseline, 至少两个可比的 Skill), 并自行设计或优化一个 Skill
-6. 提交到 collection-design 时, 仅需带有:
-   - 你评测的 **Skill 源文件或项目地址**
-   - **评测报告**
-   - **心得体会**
-7. 项目主体与自研 Skill 推荐放在你自己的仓库, 将链接放在 README 中
+1. 完成个人博客的设计、实现与公网部署，并至少发布或更新一篇真实文章，验证 `写作 -> 检查 -> 构建 -> 发布 -> 回归` 流程。
+2. README 需提供可访问的博客、源码仓库与 Figma 链接，并说明 Purpose / Audience / Context、信息架构、技术选型、Design Token、运行部署、维护迁移与资产授权。
+3. 使用本地 Agent 完成至少三次需要读取既有项目并修改多个相关文件的真实协作，记录任务边界、关键 Prompt、实际修改、运行命令、失败恢复、验收结果与人工决定。
+4. 对同一项真实改动完成 Agent 与 Web 端 AI 对照，比较上下文提供、跨文件修改、运行验证、错误恢复、人工修正成本与适用场景。
+5. 保留无 Skill 的 Baseline，使用至少一个第三方 Skill 解决博客中的真实设计或检查问题；记录来源、版本 / Commit、License、依赖、权限与评判结论。
+6. 优化该 Skill 或自行设计一个 Skill，提交可复用源文件或固定 Commit 链接；使用新内容或新场景复测，并说明适用范围、失败停止条件、风险与人工确认点。
+7. 提交设计说明、Agent / Web 对照、Skill 评测、心得体会、发布维护 SOP 与资产授权清单。项目源码与完整 Skill 可在个人仓库持续维护，本目录保留可审核的说明、记录与稳定链接。
 
 ## 目录规范
 
@@ -24,24 +21,33 @@ term1/task5
 |___ <你的 GitHub ID>   // 你的提交目录
 ```
 
-个人提交目录建议结构:
+个人提交目录建议结构：
 
 ```txt
 <你的 GitHub ID>
-|___ README.md               // 选题项目仓库链接 + 本目录说明
-|___ skills                  // 评测过的 Skill 源文件(或仅记录链接)
-|    |___ README.md          // 来源、版本/Commit、License、适用 Agent 清单
+|___ README.md                       // 博客/源码/Figma 链接 + 项目说明 + 验收摘要
+|___ design
+|    |___ design-notes.md            // 定位、信息架构、Token、响应式与设计迭代
+|___ workflow
+|    |___ workflow-setup.md          // Agent、环境、权限与两类工作流
+|    |___ agent-log.md               // 三次真实协作、失败恢复与人工验收
+|    |___ agent-web-comparison.md    // 同一任务的 Agent / Web 对照
+|    |___ publishing-sop.md          // 发布、回归、维护、备份与迁移
+|___ skills
+|    |___ README.md                  // 第三方与自研 Skill 的来源、版本和链接
 |___ report
-|    |___ workflow-setup.md  // 本地 AI 工作流部署记录(Agent、环境、PATH、两类工作流)
-|    |___ skill-benchmark.md // Skill 评测报告(Baseline 对照、评判维度、结论)
-|    |___ prompts-log.md     // 关键 Prompt 与 AI 回复摘要记录(可选, 也可放在项目仓库)
-|___ reflection.md           // 心得体会与总结
+|    |___ skill-benchmark.md         // Baseline、第三方与修改版 / 自研版对照
+|___ assets
+|    |___ LICENSE.md                 // 字体、图片、图标、模板、代码与 AI 内容清单
+|___ reflection.md                   // Skill 优缺点、风格化边界与个人结论
 ```
 
 ## 注意
 
-- 不要将 API Key、凭据与私有配置暴露到公网, 使用环境变量或占位值说明
-- 运行第三方 Skill 前先检查其说明、修改范围与权限要求
+- Figma 需开启查看权限；视觉过程与最终设计统一放在 Figma 中，不在提交仓库放置预览图、截图、录屏或设计导出图。
+- 不提交依赖目录、构建缓存、API Key、Token、Cookie、`.env`、部署凭据、私密对话或无关完整日志。
+- 自动构建、Lint、链接检查与浏览器测试是验收证据，不能代替人工视觉判断和真实阅读。
+- 运行第三方 Skill 前先阅读说明、依赖、脚本、修改范围与权限要求；无法确认来源或授权的内容不得进入最终交付。
 
 ## 参考
 

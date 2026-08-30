@@ -1,40 +1,34 @@
 # task1 提交范例
 
 > [!WARNING]
-> 本目录是 task1 的**提交范例**, 仅用于展示建议的文件结构与说明写法, 请勿直接复制内容提交。
+> 本目录是 task1 的**提交范例**，仅用于展示建议的文件结构与说明写法，请勿直接复制内容提交。
 
 - 假想的提交者: `example-student`
-- 博客地址: `https://example-student.example.com`(示例占位)
-- 源码仓库: `https://github.com/example-student/blog`(示例占位)
-- Figma: `https://www.figma.com/design/xxxxxxxx/personal-blog`(可选示例占位, 需开启查看权限)
-
-## 项目概览
-
-- 定位: 记录交互设计学习与个人项目复盘
-- 主要读者: 面试官、同方向学习者与未来的自己
-- 技术方案: Astro + Markdown + GitHub Actions + GitHub Pages(示例)
-- 验证文章: `/posts/first-case-study`(示例占位)
+- 个人定位: 关注校园数字产品与信息可视化的设计学习者（示例）
+- Figma: `https://www.figma.com/design/xxxxxxxx/personal-vi`（示例占位）
+- GitHub Profile: `https://github.com/example-student`（示例占位）
+- 设计社区主页: `https://www.behance.net/example-student`（示例占位）
+- 社交平台主页: `https://space.bilibili.com/xxxxxxxx`（示例占位）
+- term1/task5 博客: `https://example-student.example.com`（示例占位）
 
 ## 目录结构
 
 ```txt
 example
 |___ README.md
-|___ design
-|    |___ design-notes.md
-|___ workflow
-|    |___ agent-log.md
-|    |___ publishing-sop.md
+|___ brand
+|    |___ vi-guide.md
+|    |___ profile-copy.md
+|___ platforms
+|    |___ context-and-exports.md
 |___ assets
      |___ LICENSE.md
 ```
 
-## 验收摘要
+## 跨平台衔接与验证摘要
 
-| 场景 | 验收内容 | 结果 |
-| --- | --- | --- |
-| 桌面端 / 浅色 | 首页、文章列表、文章详情与键盘焦点 | 通过(示例) |
-| 桌面端 / 深色 | Token、图片与代码块对比度 | 修复 1 处后通过(示例) |
-| 移动端 | 导航、长标题、横图与代码块溢出 | 修复 2 处后通过(示例) |
-
-详细的设计与人工修改证据分别见 `design/design-notes.md` 和 `workflow/agent-log.md`。
+- Identity Token: 头像轮廓、主色语义、标题字体气质与分隔图形保持稳定。
+- Platform Mapping: GitHub 强调项目与贡献，设计社区强调案例顺序，社交平台降低信息密度并突出内容栏目。
+- 与博客衔接: 复用同一组颜色与图形 Token；各主页均能进入博客 / 作品集，博客也能返回主要平台。
+- 3 秒识别: 参与者能认出三个主页属于同一人，但首次未找到博客入口；调整链接层级后通过（示例）。
+- 真实访问: 32 px 头像中细节丢失，因此删除次要线条；GitHub 动态卡片失效时保留文字项目列表；深色背景下使用独立反白版本（示例）。
