@@ -6,8 +6,8 @@
 
 | 任务 | 时间段 | 提交目录 |
 | --- | --- | --- |
-| [task1](https://github.com/west2-online/learn-design/blob/main/steps/winter/task1.md) | 2027/01/23-2027/02/05 | [task1](task1/) |
-| [task2](https://github.com/west2-online/learn-design/blob/main/steps/winter/task2.md) | 2027/02/06-2027/02/20 | [task2](task2/) |
+| [task1](https://github.com/west2-online/learn-design/blob/main/steps/winter/task1.md) | 2027/01/23-2027/01/31 | [task1](task1/) |
+| [task2](https://github.com/west2-online/learn-design/blob/main/steps/winter/task2.md) | 2027/02/01-2027/02/20 | [task2](task2/) |
 | [task3](https://github.com/west2-online/learn-design/blob/main/steps/winter/task3.md) | 2027/02/21-2027/02/28 | [task3](task3/)（仅面试展示） |
 
 ## 目录规范
@@ -37,4 +37,6 @@ winter
 - Figma、源码仓库、在线页面与平台主页需开启必要的查看权限；本仓库不重复保存大体积设计源文件、依赖或构建产物。
 - 不提交 API Key、Token、Cookie、`.env`、部署凭据、未公开个人信息或其他敏感内容。
 - `task3` 仅进行面试展示与讲解，不需要在本仓库创建个人提交目录或发送单独的作业 PR。
+- 从 task1 开始积累运营内容，在 task1 README 的“寒假轮面试索引”链接 task2、发布内容、反馈与 SOP；可以在个人项目维护主版本。三个任务全部结束后预约一次面试，具体要求以 learn-design 为准。
+- 案例配图、平台小截图、压缩封面、轻量 SVG 与必要的小型导出均可按实际体积提交；大文件另行保存并链接，不能因压缩预览而降低生产原件质量。
 - 提交流程请见仓库根目录 [README](../README.md)。

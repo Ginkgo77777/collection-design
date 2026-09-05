@@ -7,6 +7,16 @@
 - 临摹对象: 「XX 社团公众号」的文章《迎新特辑》排版(示例占位, 实际替换为你选择的公众号与文章)
   - 参考文章链接: `https://mp.weixin.qq.com/s/xxxxxxxx`(示例占位)
 - Figma 展示链接: `https://www.figma.com/design/xxxxxxxx/wechat-theme-comparison`(示例占位, 实际替换为你的项目链接, 并开启查看权限)
+- 本次日期 / 版本：`<日期> / <主题 Commit 或版本> / <Figma 版本>`。示例中的命令、结论与地址需按实际项目替换，不表示本目录已经完成部署验证。
+
+## 阅读与源文件入口
+
+- 内容：[统一测试文稿](content/test-post.md)。
+- 临摹：[CSS](themes/imitated/theme.css)、[可编辑 SVG](themes/imitated/assets/divider.svg)。
+- 重设计：[CSS](themes/redesigned/theme.css)、[可编辑 SVG](themes/redesigned/assets/divider.svg)。
+- 依据：[参考分析](analysis/reference-analysis.md)、[环境、流程与工作记录](analysis/worklog.md)、[验证记录](analysis/validation.md)、[来源与授权](#参考与授权记录)。
+- Figma 首 Page 放两版对照、版本与本 README 链接；后续按 `Final / Foundations / References & Process` 保存渲染、排版规则、参考与修改。具体节点链接填写在验证记录中，不必手工重排文章。
+- 若主题在个人项目维护，补本次 Commit 下的文稿、CSS / SVG、运行 README 链接，并以它们为主版本。
 
 ## 目录结构
 
@@ -28,6 +38,7 @@ example
 |___ analysis
      |___ reference-analysis.md   // 参考主题分析
      |___ worklog.md              // 环境配置与工作记录
+     |___ validation.md           // 版本、宽度、实际内容、修改与复查
 ```
 
 ## 环境要求与启动方式
@@ -65,4 +76,8 @@ docker run -d -p 8080:80 doocs/md:latest   # http://localhost:8080
 
 > 声明: 本提交中的临摹主题仅用于学习与考核, 未将参考公众号的品牌标识或专属资产用于对外发布
 
-> 两阶段视觉效果统一通过上方 Figma 链接展示, 本提交目录不附预览图。
+> 两版预览、小截图或差异图可按实际体积附在文档中；大幅长截图裁切、压缩或提供链接。CSS / SVG、Markdown 与轻量运行图片随主题保留，截图不替代图形源文件。
+
+## 替代路线如何记录
+
+本例演示 doocs/md 路线。若实际使用秀米，可在相同索引中改填两版可复用模板入口、统一文稿、套用与交付步骤、Figma 对照和验证记录；未开放 CSS / SVG 时说明限制及未实践能力，无需伪造源文件。两条路线都不要求实际发布公众号或配置全部外部服务。

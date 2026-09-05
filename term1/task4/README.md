@@ -11,10 +11,14 @@
 5. 提交物需包括:
    - README: Figma 链接(可访问且具有查看权限)、选题背景、目标用户、核心任务、项目范围、文件结构、Prototype 入口、建议体验顺序、主要设计取舍、如何查看和复用
    - 前期调研与问题定义记录(优化已有软件附原流程/界面分析, 虚构软件附需求假设与业务规则)
-   - 核心任务及必要边界状态的 Prototype 思维导图; 关键界面、状态与交互统一通过 Figma 链接查看, 无需向提交仓库另附预览图或录屏
+   - 分别提供 IA、User Flow 与可点击 Prototype；README 给各自主版本入口、Prototype Flow 链接和体验顺序。思维导图 / 流程图不能代替可点击原型
    - UX 测试任务、观察记录、发现的问题、修改前后对照与复测结论
    - 资产与第三方内容清单(来源、授权与修改情况, 区分原创/修改/引用; 字体需说明嵌入与分发授权)
    - 通过 README 中的版本说明与 Figma 文件本身保留可回溯证据
+   - Figma 首 Page 放项目、预览、Prototype、版本和 README；其余按 Flows & Prototype / Final / Foundations / Components & Assets / References & Process / Review & Handoff 分区，可合并 Pages / Sections，正式稿可直接承担原型
+   - 调研、测试、交接与授权报告链接到具体节点或主版本；测试区分设计已考虑、原型已验证、实现已验证与待验证。无实现侧时做同伴交接走读，不额外要求完整开发
+   - 图标库与修改 / 自制过程、Logo / favicon、小尺寸变体、全局色版和 Primitive -> Semantic Color Token 映射应能定位到正式使用位置
+   - 允许体积合适的界面、状态、前后对照截图和轻量 SVG；大图 / 长录屏压缩或用合适存储的链接提供，不替代可编辑设计与 Prototype
 
 ## 目录规范
 
